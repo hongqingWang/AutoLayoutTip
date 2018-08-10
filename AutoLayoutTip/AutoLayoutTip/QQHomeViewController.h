@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  QQHomeViewController.h
 //  AutoLayoutTip
 //
 //  Created by 王红庆 on 2018/8/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface QQHomeViewController : UIViewController
 
 @end
-

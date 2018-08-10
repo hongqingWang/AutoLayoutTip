@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		18B1F43A211D7CEF00927F8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1F439211D7CEF00927F8E /* AppDelegate.m */; };
-		18B1F43D211D7CEF00927F8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1F43C211D7CEF00927F8E /* ViewController.m */; };
 		18B1F440211D7CEF00927F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B1F43E211D7CEF00927F8E /* Main.storyboard */; };
 		18B1F442211D7CF000927F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B1F441211D7CF000927F8E /* Assets.xcassets */; };
 		18B1F445211D7CF000927F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B1F443211D7CF000927F8E /* LaunchScreen.storyboard */; };
 		18B1F448211D7CF000927F8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1F447211D7CF000927F8E /* main.m */; };
+		18B1F451211D800500927F8E /* QQVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1F450211D800500927F8E /* QQVerticalButton.m */; };
+		18B1F455211D809500927F8E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1F454211D809500927F8E /* UIView+Frame.m */; };
+		18B1F458211D80DB00927F8E /* QQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1F457211D80DB00927F8E /* QQHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18B1F435211D7CEF00927F8E /* AutoLayoutTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B1F438211D7CEF00927F8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18B1F439211D7CEF00927F8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18B1F43B211D7CEF00927F8E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18B1F43C211D7CEF00927F8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18B1F43F211D7CEF00927F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18B1F441211D7CF000927F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18B1F444211D7CF000927F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B1F446211D7CF000927F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B1F447211D7CF000927F8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18B1F44F211D800500927F8E /* QQVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQVerticalButton.h; sourceTree = "<group>"; };
+		18B1F450211D800500927F8E /* QQVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQVerticalButton.m; sourceTree = "<group>"; };
+		18B1F453211D809400927F8E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		18B1F454211D809500927F8E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		18B1F456211D80DB00927F8E /* QQHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQHomeViewController.h; sourceTree = "<group>"; };
+		18B1F457211D80DB00927F8E /* QQHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +66,35 @@
 			children = (
 				18B1F438211D7CEF00927F8E /* AppDelegate.h */,
 				18B1F439211D7CEF00927F8E /* AppDelegate.m */,
-				18B1F43B211D7CEF00927F8E /* ViewController.h */,
-				18B1F43C211D7CEF00927F8E /* ViewController.m */,
+				18B1F456211D80DB00927F8E /* QQHomeViewController.h */,
+				18B1F457211D80DB00927F8E /* QQHomeViewController.m */,
 				18B1F43E211D7CEF00927F8E /* Main.storyboard */,
 				18B1F441211D7CF000927F8E /* Assets.xcassets */,
+				18B1F452211D808100927F8E /* Category */,
+				18B1F44E211D800500927F8E /* QQVerticalButton */,
 				18B1F443211D7CF000927F8E /* LaunchScreen.storyboard */,
 				18B1F446211D7CF000927F8E /* Info.plist */,
 				18B1F447211D7CF000927F8E /* main.m */,
 			);
 			path = AutoLayoutTip;
+			sourceTree = "<group>";
+		};
+		18B1F44E211D800500927F8E /* QQVerticalButton */ = {
+			isa = PBXGroup;
+			children = (
+				18B1F44F211D800500927F8E /* QQVerticalButton.h */,
+				18B1F450211D800500927F8E /* QQVerticalButton.m */,
+			);
+			path = QQVerticalButton;
+			sourceTree = "<group>";
+		};
+		18B1F452211D808100927F8E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18B1F453211D809400927F8E /* UIView+Frame.h */,
+				18B1F454211D809500927F8E /* UIView+Frame.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +123,7 @@
 		18B1F42D211D7CEF00927F8E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QQ;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "王红庆";
 				TargetAttributes = {
@@ -141,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B1F43D211D7CEF00927F8E /* ViewController.m in Sources */,
+				18B1F458211D80DB00927F8E /* QQHomeViewController.m in Sources */,
+				18B1F451211D800500927F8E /* QQVerticalButton.m in Sources */,
 				18B1F448211D7CF000927F8E /* main.m in Sources */,
+				18B1F455211D809500927F8E /* UIView+Frame.m in Sources */,
 				18B1F43A211D7CEF00927F8E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
