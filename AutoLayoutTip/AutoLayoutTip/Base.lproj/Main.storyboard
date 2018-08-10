@@ -33,14 +33,162 @@
                     <view key="view" contentMode="scaleToFill" id="nD1-QX-xFA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-at-W16" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG1-k5-QpF">
+                                        <rect key="frame" x="16" y="13.5" width="61.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Cv-tN-JbC">
+                                        <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="kbT-Jt-uum"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2Cv-tN-JbC" secondAttribute="bottom" id="1pR-B6-GsG"/>
+                                    <constraint firstItem="NG1-k5-QpF" firstAttribute="leading" secondItem="ABK-at-W16" secondAttribute="leading" constant="16" id="3gF-zR-Tat"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Cv-tN-JbC" secondAttribute="trailing" id="6XX-07-u5u"/>
+                                    <constraint firstItem="2Cv-tN-JbC" firstAttribute="leading" secondItem="ABK-at-W16" secondAttribute="leading" id="SfI-Bg-T2V"/>
+                                    <constraint firstItem="NG1-k5-QpF" firstAttribute="centerY" secondItem="ABK-at-W16" secondAttribute="centerY" id="XeQ-m0-qkl"/>
+                                    <constraint firstAttribute="height" constant="44" id="iFk-Sg-Dwf"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NG1-k5-QpF" secondAttribute="trailing" constant="20" symbolic="YES" id="nkp-Cg-8J6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjK-rr-fzp" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="108" width="375" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcL-W5-nN6" customClass="QQVerticalButton">
+                                        <rect key="frame" x="0.0" y="10" width="94" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="个人中心" image="home_service_personal">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gma-Ho-jLP" customClass="QQVerticalButton">
+                                        <rect key="frame" x="94" y="10" width="93.5" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="健康计划书" image="home_service_plan">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mi-pf-zKi" customClass="QQVerticalButton">
+                                        <rect key="frame" x="187.5" y="10" width="94" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="商城" image="home_service_mall">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-uE-9iz" customClass="QQVerticalButton">
+                                        <rect key="frame" x="281.5" y="10" width="93.5" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="健康百科" image="home_service_healthknowledge">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCe-yx-rEx" customClass="QQVerticalButton">
+                                        <rect key="frame" x="0.0" y="95" width="94" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="在线客服" image="home_service_server">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltk-sK-dXG" customClass="QQVerticalButton">
+                                        <rect key="frame" x="94" y="95" width="93.5" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="我的问卷" image="home_service_research">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3n-rb-ybY" customClass="QQVerticalButton">
+                                        <rect key="frame" x="187.5" y="95" width="94" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="家庭成员" image="home_service_member">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUx-3A-w4u" customClass="QQVerticalButton">
+                                        <rect key="frame" x="281.5" y="95" width="93.5" height="75"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="系统设置" image="home_service_setting">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.97124261860000005" blue="0.63089568510000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sCe-yx-rEx" firstAttribute="width" secondItem="QcL-W5-nN6" secondAttribute="width" id="1wZ-cz-xz0"/>
+                                    <constraint firstItem="QcL-W5-nN6" firstAttribute="top" secondItem="pjK-rr-fzp" secondAttribute="top" constant="10" id="8a6-kX-iFx"/>
+                                    <constraint firstItem="2Mi-pf-zKi" firstAttribute="width" secondItem="QcL-W5-nN6" secondAttribute="width" id="9Rr-Vl-vuL"/>
+                                    <constraint firstItem="OUx-3A-w4u" firstAttribute="height" secondItem="QcL-W5-nN6" secondAttribute="height" id="9lu-YH-2SU"/>
+                                    <constraint firstAttribute="bottom" secondItem="OUx-3A-w4u" secondAttribute="bottom" constant="10" id="Bhp-hG-Jds"/>
+                                    <constraint firstItem="2Mi-pf-zKi" firstAttribute="leading" secondItem="gma-Ho-jLP" secondAttribute="trailing" id="DMs-YK-GA8"/>
+                                    <constraint firstItem="2Mi-pf-zKi" firstAttribute="height" secondItem="QcL-W5-nN6" secondAttribute="height" id="Eyt-6Z-u8U"/>
+                                    <constraint firstItem="Dfu-uE-9iz" firstAttribute="top" secondItem="pjK-rr-fzp" secondAttribute="top" constant="10" id="Fqe-Ez-UrD"/>
+                                    <constraint firstItem="Dfu-uE-9iz" firstAttribute="leading" secondItem="2Mi-pf-zKi" secondAttribute="trailing" id="HAd-zR-v1n"/>
+                                    <constraint firstItem="Dfu-uE-9iz" firstAttribute="width" secondItem="QcL-W5-nN6" secondAttribute="width" id="HEp-2V-sIX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q3n-rb-ybY" secondAttribute="bottom" constant="10" id="Kud-HZ-nMD"/>
+                                    <constraint firstItem="gma-Ho-jLP" firstAttribute="leading" secondItem="QcL-W5-nN6" secondAttribute="trailing" id="LkU-LE-hRh"/>
+                                    <constraint firstItem="2Mi-pf-zKi" firstAttribute="top" secondItem="pjK-rr-fzp" secondAttribute="top" constant="10" id="MBQ-6j-v7d"/>
+                                    <constraint firstItem="sCe-yx-rEx" firstAttribute="top" secondItem="QcL-W5-nN6" secondAttribute="bottom" constant="10" id="Mcf-91-VFE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dfu-uE-9iz" secondAttribute="trailing" id="MoQ-Vy-9Nt"/>
+                                    <constraint firstItem="OUx-3A-w4u" firstAttribute="width" secondItem="QcL-W5-nN6" secondAttribute="width" id="RPY-me-uzV"/>
+                                    <constraint firstItem="QcL-W5-nN6" firstAttribute="leading" secondItem="pjK-rr-fzp" secondAttribute="leading" id="Tc2-Iq-8ds"/>
+                                    <constraint firstItem="ltk-sK-dXG" firstAttribute="width" secondItem="QcL-W5-nN6" secondAttribute="width" id="Tiv-fg-Gh7"/>
+                                    <constraint firstItem="ltk-sK-dXG" firstAttribute="leading" secondItem="sCe-yx-rEx" secondAttribute="trailing" id="Uib-iC-oEK"/>
+                                    <constraint firstItem="Q3n-rb-ybY" firstAttribute="leading" secondItem="ltk-sK-dXG" secondAttribute="trailing" id="Vit-WT-ISd"/>
+                                    <constraint firstItem="ltk-sK-dXG" firstAttribute="height" secondItem="QcL-W5-nN6" secondAttribute="height" id="W22-Ph-7qa"/>
+                                    <constraint firstAttribute="height" constant="180" id="WGM-P8-3pe"/>
+                                    <constraint firstItem="Q3n-rb-ybY" firstAttribute="top" secondItem="2Mi-pf-zKi" secondAttribute="bottom" constant="10" id="ZXs-Bx-zZw"/>
+                                    <constraint firstAttribute="trailing" secondItem="OUx-3A-w4u" secondAttribute="trailing" id="bam-X0-MRm"/>
+                                    <constraint firstItem="gma-Ho-jLP" firstAttribute="width" secondItem="QcL-W5-nN6" secondAttribute="width" id="dc6-IC-cI1"/>
+                                    <constraint firstItem="Q3n-rb-ybY" firstAttribute="width" secondItem="QcL-W5-nN6" secondAttribute="width" id="hQw-ms-6Iv"/>
+                                    <constraint firstAttribute="bottom" secondItem="ltk-sK-dXG" secondAttribute="bottom" constant="10" id="ozU-hV-irJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="sCe-yx-rEx" secondAttribute="bottom" constant="10" id="pYn-f2-rCy"/>
+                                    <constraint firstItem="OUx-3A-w4u" firstAttribute="leading" secondItem="Q3n-rb-ybY" secondAttribute="trailing" id="phJ-Rz-0i2"/>
+                                    <constraint firstItem="gma-Ho-jLP" firstAttribute="height" secondItem="QcL-W5-nN6" secondAttribute="height" id="qFc-lJ-VLk"/>
+                                    <constraint firstItem="gma-Ho-jLP" firstAttribute="top" secondItem="pjK-rr-fzp" secondAttribute="top" constant="10" id="ryX-OK-Ag8"/>
+                                    <constraint firstItem="ltk-sK-dXG" firstAttribute="top" secondItem="gma-Ho-jLP" secondAttribute="bottom" constant="10" id="tNL-vp-Fpq"/>
+                                    <constraint firstItem="sCe-yx-rEx" firstAttribute="leading" secondItem="pjK-rr-fzp" secondAttribute="leading" id="ubO-U4-Zrw"/>
+                                    <constraint firstItem="sCe-yx-rEx" firstAttribute="height" secondItem="QcL-W5-nN6" secondAttribute="height" id="ubW-4K-lac"/>
+                                    <constraint firstItem="Q3n-rb-ybY" firstAttribute="height" secondItem="QcL-W5-nN6" secondAttribute="height" id="uoN-Nk-tcP"/>
+                                    <constraint firstItem="OUx-3A-w4u" firstAttribute="top" secondItem="Dfu-uE-9iz" secondAttribute="bottom" constant="10" id="w8o-S5-NHG"/>
+                                    <constraint firstItem="Dfu-uE-9iz" firstAttribute="height" secondItem="QcL-W5-nN6" secondAttribute="height" id="xhE-QF-rbT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ABK-at-W16" firstAttribute="top" secondItem="n0p-0f-fzs" secondAttribute="top" id="6iK-se-5zY"/>
+                            <constraint firstItem="pjK-rr-fzp" firstAttribute="leading" secondItem="n0p-0f-fzs" secondAttribute="leading" id="Ghb-lF-dBy"/>
+                            <constraint firstItem="n0p-0f-fzs" firstAttribute="trailing" secondItem="pjK-rr-fzp" secondAttribute="trailing" id="JG9-gQ-921"/>
+                            <constraint firstItem="pjK-rr-fzp" firstAttribute="top" secondItem="ABK-at-W16" secondAttribute="bottom" id="PnJ-rr-grk"/>
+                            <constraint firstItem="n0p-0f-fzs" firstAttribute="trailing" secondItem="ABK-at-W16" secondAttribute="trailing" id="dfD-wj-omz"/>
+                            <constraint firstItem="ABK-at-W16" firstAttribute="leading" secondItem="n0p-0f-fzs" secondAttribute="leading" id="lax-MD-szQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="n0p-0f-fzs"/>
                     </view>
                     <navigationItem key="navigationItem" id="fPD-ox-Reo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDn-ld-ALC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50" y="-8"/>
+            <point key="canvasLocation" x="-50.399999999999999" y="-8.5457271364317844"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home_service_healthknowledge" width="50" height="50"/>
+        <image name="home_service_mall" width="50" height="50"/>
+        <image name="home_service_member" width="50" height="50"/>
+        <image name="home_service_personal" width="50" height="50"/>
+        <image name="home_service_plan" width="50" height="50"/>
+        <image name="home_service_research" width="50" height="50"/>
+        <image name="home_service_server" width="50" height="50"/>
+        <image name="home_service_setting" width="50" height="50"/>
+    </resources>
 </document>
